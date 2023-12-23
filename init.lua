@@ -43,6 +43,7 @@ P.S. You can delete this when you're done too. It's your config now :)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 vim.bo.shiftwidth = 4
+vim.bo.smartindent = true
 vim.keymap.set('n', '<leader>nt', '<Cmd>Neotree toggle<CR>', {desc = '[N]eo[t]ree' })
 -- Install package manager
 --    https://github.com/folke/lazy.nvim
