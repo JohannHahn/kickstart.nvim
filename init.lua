@@ -75,10 +75,6 @@ require('lazy').setup({
 
   -- Detect tabstop and shiftwidth automatically
   'tpope/vim-sleuth',
-  -- Debugging
-  'mfussenegger/nvim-dap',
-  'rcarriga/nvim-dap-ui',
-  'theHamsta/nvim-dap-virtual-text',
 
   -- NOTE: This is where your plugins related to LSP can be installed.
   --  The configuration is done below. Search for lspconfig to find it below.
@@ -161,11 +157,10 @@ require('lazy').setup({
   },
 
   {
-    -- Add ndentation guides even on blank lines
+    -- Add indentation guides even on blank lines
     'lukas-reineke/indent-blankline.nvim',
     -- Enable `lukas-reineke/indent-blankline.nvim`
     -- See `:help indent_blankline.txt`
-    main = "ibl",
     opts = {
       char = '┊',
       show_trailing_blankline_indent = false,
